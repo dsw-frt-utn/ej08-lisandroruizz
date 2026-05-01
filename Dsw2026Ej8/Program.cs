@@ -22,6 +22,13 @@ namespace Dsw2026Ej8
 
             string resultado = problema3.CompararCopias(12, producto);
 
+            Problema4 problema4 = new Problema4();
+
+            Console.WriteLine(problema4.CalcularPromedio(8, null, 10));
+            Console.WriteLine(problema4.CalcularPromedio(null, null, null));
+            Console.WriteLine(problema4.CalcularPromedio(8, 20, 10));
+            Console.WriteLine(problema4.CalcularPromedio(-1, 7, 9));
+
 
             Console.WriteLine(etiqueta);
             Console.WriteLine(resumen1);
