@@ -29,6 +29,17 @@ namespace Dsw2026Ej8
             Console.WriteLine(problema4.CalcularPromedio(8, 20, 10));
             Console.WriteLine(problema4.CalcularPromedio(-1, 7, 9));
 
+            Problema5 problema5 = new Problema5();
+
+            Sale ventaMinorista = new RetailSale(1000);
+            Sale ventaMayorista = new WholesaleSale(1000);
+
+            decimal totalMinorista = problema5.ObtenerImporteFinal(ventaMinorista);
+            decimal totalMayorista = problema5.ObtenerImporteFinal(ventaMayorista);
+
+            Console.WriteLine($"Venta minorista: importe final {totalMinorista:C}");
+            Console.WriteLine($"Venta mayorista: importe final {totalMayorista:C}");
+
 
             Console.WriteLine(etiqueta);
             Console.WriteLine(resumen1);
