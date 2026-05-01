@@ -1,4 +1,5 @@
-﻿using Dsw2026Ej8.Domain;
+﻿using Dsw2026Ej08.Domain;
+using Dsw2026Ej8.Domain;
 namespace Dsw2026Ej8
 
 { 
@@ -39,6 +40,18 @@ namespace Dsw2026Ej8
 
             Console.WriteLine($"Venta minorista: importe final {totalMinorista:C}");
             Console.WriteLine($"Venta mayorista: importe final {totalMayorista:C}");
+
+            Problema6 problema6 = new Problema6();
+
+            Console.WriteLine("=== Problema 6 ===");
+
+            string codigo1 = problema6.NormalizarCodigoProducto(" ab 123 x ");
+            string codigo2 = problema6.NormalizarCodigoProducto(" prod 45 caja ");
+            string codigo3 = problema6.NormalizarCodigoProducto(null);
+
+            Console.WriteLine($"Código original: ' ab 123 x ' -> {codigo1}");
+            Console.WriteLine($"Código original: ' prod 45 caja ' -> {codigo2}");
+            Console.WriteLine($"Código original: null -> {codigo3}");
 
 
             Console.WriteLine(etiqueta);
